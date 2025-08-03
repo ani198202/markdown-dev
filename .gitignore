@@ -1,0 +1,26 @@
+# Markdown 導出/緩存文件
+*.pdf          # 導出的 PDF 文檔
+*.docx         # 導出的 Word 文檔
+*.html         # 導出的 HTML 文件（若無需版本控制）
+*.epub         # 導出的電子書格式
+*.md~          # 臨時備份文件（部分編輯器生成）
+*.swp          # Vim 交換文件
+*.swo          # Vim 交換文件（二次編輯）
+
+# 編輯器/IDE 配置
+.idea/         # JetBrains 系列（如 WebStorm、IDEA）
+.vscode/       # VS Code 配置
+*.sublime-*    # Sublime Text 配置
+.DS_Store      # macOS 系統文件
+Thumbs.db      # Windows 縮略圖緩存
+
+# 預覽工具緩存
+preview/       # 本地預覽生成的臨時目錄
+node_modules/  # 若使用 Node 工具（如 markdown-it）生成預覽
+dist/          # 構建工具輸出目錄（如 VuePress、Hexo 等）
+public/        # 靜態站點生成器輸出目錄
+
+# 其他臨時文件
+tmp/           # 臨時存放的素材或草稿
+*.log          # 日誌文件
+.env           # 環境變量文件（若包含敏感信息）
