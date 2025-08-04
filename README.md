@@ -10,4 +10,4 @@
 
 ## 版權訊息  
 
-標準 [MIT](LICENESE) 授權
+標準 [MIT](LICENSE) 授權
