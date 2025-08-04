@@ -1,8 +1,8 @@
-# Markdown檔案撰寫研究  
+# Markdown FlowChart (流程圖) 檔案撰寫研究  
 
 ---  
 
-本倉庫主要收集在撰寫markdown流程圖檔案時接觸到的專用指令示範效果。
+本倉庫主要收集在撰寫Markdown FlowChart (流程圖) 檔案時接觸到的專用指令示範效果。
 
 ## 流程圖 (FlowChart)  
 
