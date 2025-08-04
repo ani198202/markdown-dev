@@ -9,24 +9,23 @@ flowchart TD
     D1 -- 是 --> C
     D1 -- 否 --> E1[提示「需管理員權限」並退出]
     
-    %% 中斷監控器（全程並行，修正文本格式）
     C --> Z[中斷監控器啟動 (全程監聽 Ctrl-C)]
     Z -->|檢測到中斷| M[觸發中斷處理]
     
-    %% 主流程
     C --> E[掃瞄 PATH 環境變數]
+    note over E: 這些階段均可被 Ctrl-C 中斷
     E --> F{是否發現問題？}
     F -- 否 --> G[顯示「無需修復」訊息]
     F -- 是 --> H[建立備份點]
+    note over H: 這些階段均可被 Ctrl-C 中斷
     H --> I[執行修復操作]
+    note over I: 這些階段均可被 Ctrl-C 中斷
     I --> J[記錄操作日誌]
+    note over J: 這些階段均可被 Ctrl-C 中斷
     J --> L[完成修復並顯示結果]
     
-    %% 中斷處理流程
     M --> N[自動回滾至備份狀態]
     N --> O[提示使用者恢復選項]
     
-    %% 標註中斷範圍
     style Z fill:#f9f,stroke:#333,stroke-width:2px
-    note over E,H,I,J: 這些階段均可被 Ctrl-C 中斷
 ```
